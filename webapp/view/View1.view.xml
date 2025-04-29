@@ -1,0 +1,49 @@
+<mvc:View
+    controllerName="messagingjs.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <CheckBox
+            id="jmm"
+            selected="{viewModel>/selected}"
+        />
+        <Input
+            id="hkl"
+            value="{path: 'viewModel>/value', type: 'sap.ca.ui.model.type.Number'}"
+        />
+        <Button
+            id="btn"
+            text="{i18n>buttonText}"
+            press="onPress"
+        />
+        <Button
+            id="btn1"
+            text="{i18n>buttonText1}"
+            press="onPress1"
+        />
+        <Button
+            id="btn2"
+            text="{i18n>buttonText2}"
+            press="onPress2"
+        />
+
+        <HBox
+            id="daskajs"
+            items="{viewModel>/data}"
+        >
+            <Input
+                id="sadasd"
+                value="{path: 'viewModel>', type: 'sap.ca.ui.model.type.Number'}"
+            />
+        </HBox>
+        <footer>
+            <OverflowToolbar id="_IDGenOverflowToolbar">
+                <ToolbarSpacer id="_IDGenToolbarSpacer" />
+            </OverflowToolbar>
+        </footer>
+    </Page>
+</mvc:View>
